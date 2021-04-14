@@ -49,8 +49,7 @@ def main():
     """
     - Drops (if exists) and Creates the sparkify database. 
     
-    - Establishes connection with the sparkify database and gets
-    cursor to it.  
+    - Establishes connection with the sparkify database and gets cursor to it.  
     
     - Drops all the tables.  
     
@@ -58,6 +57,7 @@ def main():
     
     - Finally, closes the connection. 
     """
+    
     cur, conn = create_database()
     
     drop_tables(cur, conn)
