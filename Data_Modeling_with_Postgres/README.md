@@ -1,5 +1,5 @@
 # Data Modeling with Postgres
----
+
 
 ## Overview
 
@@ -9,7 +9,7 @@ In order to optimize queries on song play analysis, in this project, we will des
                                                 
 
 ## DataSets
----
+
 
 #### Song Datasets
  - A subset of real data from the Million Song Dataset website; 
@@ -28,7 +28,7 @@ In order to optimize queries on song play analysis, in this project, we will des
 
 
 ## Schema
----
+
 Based on the song metadata and log data, and the analytics team's reqirement, design the fact and dimension tables for a star schema. 
 
 ### Fact Table:
@@ -50,7 +50,7 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
 
 
 ## Build ETL Pipeline
----
+
 - First, perform ETL on the song datasets, to create the songs and artists dimensional tables.
     - Extract Data for Artists Table, Insert Record into Artist Table
     - Extract Data for Songs Table, Insert Record into Song Table
@@ -78,7 +78,7 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
     ```
 
 ## Project File Structure
----
+
 
 - `sql_queries.py` : contains all the sql queries 
 - `create_tables.py` : drops and creates tables
@@ -90,7 +90,7 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
 
 
 ## How to Run
----
+
 - **Environment**: Python 3.6.3  and PostgreSQL 9.5.21
 - In the console, run the following command to create database and fact and dimension tables:
 
