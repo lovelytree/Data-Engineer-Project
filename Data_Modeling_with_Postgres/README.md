@@ -31,11 +31,11 @@ In order to optimize queries on song play analysis, in this project, we will des
 
 Based on the song metadata and log data, and the analytics team's reqirement, design the fact and dimension tables for a star schema. 
 
-### Fact Table:
+#### Fact Table:
 1. **songplays** - records in log data associated with song plays i.e. records with page NextSong
  - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 
-### Dimension Table:
+#### Dimension Table:
 2. **users** - users in the app
  - user_id, first_name, last_name, gender, level
 
@@ -47,6 +47,7 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
 
 5. **time** - timestamps of records in songplays broken down into specific units
  - start_time, hour, day, week, month, year, weekday
+
 
 
 ## Build ETL Pipeline
@@ -70,6 +71,7 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
     cur = conn.cursor()
     cur.execute(query)
     ```
+
 
 ## Project File Structure
 
