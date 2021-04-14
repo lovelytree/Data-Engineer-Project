@@ -51,15 +51,9 @@ Based on the song metadata and log data, and the analytics team's reqirement, de
 
 ## Build ETL Pipeline
 
-- First, perform ETL on the song datasets, to create the songs and artists dimensional tables.
-    - Extract Data for Artists Table, Insert Record into Artist Table
-    - Extract Data for Songs Table, Insert Record into Song Table
-    
+- First, perform ETL on the song datasets to create the songs and artists dimensional tables.   
 - Second, perform ETL on the log_data dataset to create the time and users dimensional tables, as well as the songplays fact table.
-    - Extract Data for Time Table, Insert Records into Time Table
-    - Extract Data for Users Table, Insert Records into Users Table
-    - Extract Data for Songplays Table,  Insert Records into Songplays Table
-    
+  
 - Python libraries used during ETL 
     - Extract Data from JSON file: using pandas dataframe to read JSON file; 
     
