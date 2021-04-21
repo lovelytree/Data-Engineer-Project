@@ -51,12 +51,10 @@ def check_greater_than_zero(*args, **kwargs):
     #
     # TODO: Add a check here to verify that at least one record was found
     #       Raise an error if less than one record is found
-    #
-    # if <REPLACE>:
-    #     raise <REPLACE>
+
     
     if num_records < 1:
-        raise ValueError(f"Data quality check failed. {table} returned no results")
+        raise ValueError(f"Data quality check failed. {table} contained no records")
 
     logging.info(f"Data quality on table {table} check passed with {records[0][0]} records")
 
