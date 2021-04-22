@@ -23,8 +23,7 @@ dag = DAG("lesson3.exercise4", start_date=datetime.datetime.utcnow())
 # TODO: Load trips data from S3 to RedShift. Use the s3_key
 #       "data-pipelines/divvy/unpartitioned/divvy_trips_2018.csv"
 #       and the s3_bucket "udacity-dend"
-#
-#copy_trips_task = S3ToRedshiftOperator(...)
+
 
 copy_trips_task = S3ToRedshiftOperator(
     task_id="load_trips_from_s3_to_redshift",
@@ -39,7 +38,6 @@ copy_trips_task = S3ToRedshiftOperator(
 #
 # TODO: Perform a data quality check on the Trips table
 #
-#check_trips = HasRowsOperator(...)
 
 check_trips = HasRowsOperator(
     task_id="check_trips",
@@ -52,7 +50,6 @@ check_trips = HasRowsOperator(
 # TODO: Use the FactsCalculatorOperator to create a Facts table in RedShift. The fact column should
 #       be `tripduration` and the groupby_column should be `bikeid`
 #
-#calculate_facts = FactsCalculatorOperator(...)
 
 calculate_facts = FactsCalculatorOperator(
     task_id="calculate_facts_table",
