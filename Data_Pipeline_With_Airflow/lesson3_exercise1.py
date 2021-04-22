@@ -49,11 +49,6 @@ copy_trips_task = S3ToRedshiftOperator(
     s3_key="data-pipelines/divvy/partitioned/{execution_date.year}/{execution_date.month}/divvy_trips.csv"
 )
 
-#
-# TODO: Replace this data quality check with the HasRowsOperator
-#
-
-
 check_trips = HasRowsOperator(
     task_id='check_trips_data',
     dag=dag,
@@ -77,10 +72,6 @@ copy_stations_task = S3ToRedshiftOperator(
     s3_key="data-pipelines/divvy/unpartitioned/divvy_stations_2017.csv",
     table="stations"
 )
-
-#
-# TODO: Replace this data quality check with the HasRowsOperator
-#
 
 check_stations = HasRowsOperator(
     task_id='check_stations_data',
