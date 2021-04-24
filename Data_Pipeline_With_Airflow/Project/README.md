@@ -16,3 +16,19 @@ In this project, we will create high grade data pipelines that are dynamic and b
 
 - Song data: s3://udacity-dend/song_data
 
+## Project Structure
+
+* DAG
+  * udac_pipeline_airflow : Load and transform data in Redshift with Airflow
+
+* Operators
+  * CreateTableOperator     : create staging tables, fact table and dimensions tables
+  * StageToRedshiftOperator : load JSON formatted files from S3 to Amazon Redshift
+  * LoadFactOperator        : load fact table from staging table
+  * LoadDimensionOperator   : load dimensions tables from staging table
+  * DataQualityOperator     : run checks on the tables
+
+* helper class
+  * SqlQueries : SQL transformations   
+
+
