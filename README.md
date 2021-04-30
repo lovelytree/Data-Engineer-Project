@@ -8,7 +8,7 @@ A few projects done in Udacity Data Engineering Nanodegree
   - Insert data into Postgres Database using psycopg2
 
 ### Project 2 - Data Model with Cassandra
-With Apache Cassandra model the database tables on the queries you want to run
+- With Apache Cassandra model the database tables on the queries you want to run
 
 ### Project 3 - Data Warehouse 
 - Build an ETL pipeline:
