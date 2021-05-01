@@ -1,17 +1,15 @@
 # Data Lake Project
 
 
-
-
 ## Overview
----
+
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their data warehouse to a data lake. Their data reside in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs.
 
 In this project, we will build an ETL pipeline that extracts data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. This will allow their analytics team to continue finding insights in what songs their users are listening to.
 
 
 ## DataSets
----
+
 #### Song Dataset
  - A subset of real data from the Million Song Dataset website; 
  - Each file is JSON format and contains metadata and artist of that song. 
@@ -29,35 +27,38 @@ In this project, we will build an ETL pipeline that extracts data from S3, proce
 ```
 
 ## Schema for Song Play Analysis
----
 
 ### Fact Table:
 * **songplays** - records in log data associated with song plays i.e. records with page NextSong
- - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
-
+```
+songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+```
 ### Dimension Table:
 * **users** - users in the app
- - user_id, first_name, last_name, gender, level
-
+```
+user_id, first_name, last_name, gender, level
+```
 * **songs** - songs in music database
- - song_id, title, artist_id, year, duration
-
+```
+song_id, title, artist_id, year, duration
+```
 * **artists** - artists in music database
- - artist_id, name, location, latitude, longitude
-
+```
+artist_id, name, location, latitude, longitude
+```
 * **time** - timestamps of records in songplays broken down into specific units
- - start_time, hour, day, week, month, year, weekday
-
+```
+start_time, hour, day, week, month, year, weekday
+```
 
 ## Project File Structure
----
+
 - `dl.cfg` : contains aws credential
 - `etl.py` : load data from s3, then process them using Spark, and loads the data back into S3 
 - `README.md` : provides discussion on your project
 
 
 ## How to Run
----
 - Add IAM role info to dl.cfg
 - Load data from s3 to Redshift:
 
