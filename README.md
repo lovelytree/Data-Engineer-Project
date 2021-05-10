@@ -16,6 +16,14 @@ A few projects done in Udacity Data Engineering Nanodegree
   - Transforms data into a set of dimensional tables 
 
 ### Project 4 - Data Lake
-
+- Building an ETL pipeline
+  - Extracts their data from S3
+  - Processes them using Spark
+  - Loads the data back into S3 as a set of dimensional table
 
 ### Project 5 - Data Pipeline with Airflow
+- Use the Apache Airflow to make more automation and monitoring to the data warehouse ETL pipelines
+- Make data pipelines:
+  - Dynamic and built from reusable tasks
+  - Can be monitored
+  - Allow easy backfills
