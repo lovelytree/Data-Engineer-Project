@@ -3,7 +3,8 @@
 A few projects done in Udacity Data Engineering Nanodegree
 
 ### Project 1 - Data Model with Postgres
-- Design a database and build ETL pipeline to move data from JSON file to Postgres database
+- Design a database in Postgres 
+- Build ETL pipeline to move data from JSON file to Postgres database
   - Extract data from JSON file using pandas dataframe
   - Insert data into Postgres Database using psycopg2
 
@@ -11,13 +12,15 @@ A few projects done in Udacity Data Engineering Nanodegree
 - With Apache Cassandra model the database tables on the queries you want to run
 
 ### Project 3 - Data Warehouse 
-- Build an ETL pipeline:
+- Design a star schema in AWS Redshift 
+- Build an ETL pipeline to transfer data from S3 to Redshift
   - Extracts data from S3 and stages them in Redshift using COPY command
   - Transforms data into a set of dimensional tables 
 
 ### Project 4 - Data Lake
+- Read and parse data from S3 using spark and save the data in partitioned parquet files
 - Building an ETL pipeline:
-  - Extracts data from S3 using spark.read.json
+  - Extracts data from S3 
   - Processes data using Spark
   - Loads the data back into S3 as a set of dimensional table
 
