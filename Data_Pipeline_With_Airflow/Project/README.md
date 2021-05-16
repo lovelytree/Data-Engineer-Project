@@ -18,20 +18,21 @@ In this project, we will create high grade data pipelines that are dynamic and b
 
 ## Project Structure
 
-* DAG
-  * udac_pipeline_airflow : Load and transform data in Redshift with Airflow
+* dags
+  * udac_example_dag.py : Load and transform data in Redshift with Airflow
 
-* Operators
+* plugins/operators
   * CreateTableOperator     : create staging tables, fact table and dimensions tables
   * StageToRedshiftOperator : load JSON formatted files from S3 to Amazon Redshift
   * LoadFactOperator        : load fact table from staging table
   * LoadDimensionOperator   : load dimensions tables from staging table
   * DataQualityOperator     : run checks on the tables
 
-* Helper class
+* plugins/helper
   * SqlQueries : SQL transformations   
 
-## Graph view
+## Graph View
 
+![Graph View ](https://github.com/lovelytree/Data-Engineering-Projects/blob/main/Data_Pipeline_With_Airflow/Project/project%20graph%20view.png)
 
 
