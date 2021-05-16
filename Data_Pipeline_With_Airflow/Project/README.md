@@ -28,7 +28,10 @@ In this project, we will create high grade data pipelines that are dynamic and b
   * LoadDimensionOperator   : load dimensions tables from staging table
   * DataQualityOperator     : run checks on the tables
 
-* helper class
+* Helper class
   * SqlQueries : SQL transformations   
+
+## Graph view
+
 
 
